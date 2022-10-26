@@ -1,0 +1,81 @@
+/* Generali */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:14px;
+}
+
+.fixed{
+    position:fixed;
+}
+.ms_c_w{
+    color:#fff;
+}
+.ms_c_w:hover{
+    color:rgb(206, 101, 101);
+    transform:scale(1.1);
+}
+
+.ms_bg_1{
+    background-color: #2c3e50;
+}
+.ms_bg_2{
+    background-color: #1abc9c;
+}
+.ms_bg_3{
+    background-color:#3a546d;
+}
+
+.white{
+    color:#fff;
+    margin: 5px auto;
+    text-align:center;
+}
+
+.fa-star.white{
+    font-size:24px;
+}
+
+
+
+
+/* Nav BS */
+.menu-top{
+    width:100%;
+    height:auto;
+    padding: 0 20px;
+    z-index:1;
+}
+
+/* Hero */
+.hero{
+    background-color: #1abc9c;
+    padding-top:5em;
+}
+
+.avatar{
+    clip-path: circle();
+    width:45%;
+    height:auto;
+}
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+}
+.img{
+    padding:10px;
+    width:100%;
+    height:auto;
+}
+
+#portfolio{
+    margin: 50px auto;
+}
+.center{
+    text-align:center;
+}
