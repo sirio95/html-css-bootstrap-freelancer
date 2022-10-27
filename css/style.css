@@ -8,73 +8,177 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 14px;
 }
-/* debug */
-div{
-    border: 1px solid #000;
-    height:auto;
-}
-nav{
-    height:100px;
+
+/* header - Navbar*/
+.nav_bar{
     width:100%;
+    height:70px;
+    background-color: #2c3e50;
+    position:fixed;
+    z-index:1;
 }
-.hero, .about, .contact, .info, .copyright{
-    height:auto;
-    width:100%;
-}
-.portfolio{
-    height:auto;
-    width:100%;
-}
-.none_sm{
-    display:none;
+.nav_bar a{
+    color:#fff;
 }
 
-.none_md_lg{
-    margin-left: calc((100% / 12) * 4);
-    margin-right: calc((100% / 12) * 1);
-    /* width:calc((100% / 12) * 1); */
+.nav_bar a:hover{
+    color:rgb(206, 101, 101);
+    transform:scale(1.1);
 }
 
+.wdth_1{
+    padding: 10px 10%;
+}
+.wdth_2{
+    padding: 10px 5%;
+}
 
-.box{
-    background-color: blanchedalmond;
+/* header - Hero */
+.bg_lgt{
     width:100%;
     height:auto;
-    min-height:50px;
+    background-color: #1abc9c;
 }
-.flex_wrap{
-    display:flex;
-    flex-wrap: wrap;
+.avatar{
+    width:40%;
+    margin: 10px 30%;
+    margin-top: 120px;
 }
-@media all and (min-width: 576px){
-    .none_sm{
-        display:block;
-        margin-left: calc((100% / 12) * 1);
-    }
-    .none_md_lg{
-        display:none;
-    }
-    .box{
-        width:calc((100% / 2) - 10px);
-        height:auto;
-        margin: 0 5px;
-    }
+.text-white{
+    color:#fff;
+    text-align: center;
+}
+.line_white{
+    width:100px;
+    height:5px;
+    background-color: #fff;
+    margin: auto 5px;
+    border-radius:25px;
+}
+.icon_white{
+    color:white;
+    font-size:20px;
+}
+.img{
+    padding:10px;
+    width:100%;
+    height:auto;
+}
+.ms_rounded{
+    display:block;
+    border-radius:25px;
+}
+.line_black{
+    width:100px;
+    height:5px;
+    background-color: #000;
+    margin: auto 5px;
+    border-radius:25px;
+}
+.icon_black{
+    color:black;
+    font-size:20px;
+}
+.bg_lgt p{
+    color:white;
+}
+.download{
+    padding:3px;
+    color:#fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius:10px;
+    margin-left:40%; 
+}
+.info{
+    background-color: #3a546d;
+}
+.ms_socials{
+    width:100%;
+    justify-content:center;
+}
+.ms_socials li{
+    margin: 0 5px;
+}
+.ms_socials a{
+    display:block;
+    color:#fff;
+    width:30px;
+    height:30px;
+    border: 1px solid #fff;
+    border-radius:50%;
+    padding-left: 4px;
+}
+.ms_socials a:hover{
+    color:rgb(206, 101, 101);
+    transform:scale(1.1);
 }
 
-@media all and (min-width:768px){
-    .none_sm{
-        display:block;
-        margin-left: calc((100% / 12) * 1);
-    }
-    .none_md_lg{
-        display:none;
-    }
-    .box{
-        width: calc((100% / 3) - 30px);
-        height: auto;
-        margin: 0 5px;
-    }
-    .flex_wrap{
-        justify-content: center;
-    }
+#special{
+    color:#1abc9c;
+    text-decoration: none;
 }
+#special:hover{
+    color:rgb(206, 101, 101);
+    transform:scale(1.1);
+}
+
+.copyright{
+    width:100%;
+    height:30px;
+    background-color: #2c3e50;
+}
+/* form da bootstrap */
+.get-in-touch {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}   
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #000;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+    -webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 5px;
+    border: none;
+    width:80px;
+    cursor: pointer;
+    border-radius:25px;
+  }
